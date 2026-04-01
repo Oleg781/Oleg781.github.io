@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  /* background: linear-gradient(to right, #ffe600, rgb(128, 92, 0)); */
+  color: #ffffff;
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* --- HEADER --- */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 25px;
+  color: white;
+  border-bottom: 4px solid #ff6600;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Desktop navigation */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.nav-links .primary {
+  background: #ff6600;
+  border-color: #ff6600;
+}
+
+.nav-links .primary:hover {
+  background: #e05500;
+}
+
+.logout-btn {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #a8a8a8;
+}
+
+/* --- MOBILE MENU --- */
+.mobile-menu {
+  display: flex;                 /* 🔥 aina flex, muuten ei näy */
+  flex-direction: column;
+  gap: 20px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 70%;
+  max-width: 300px;
+  height: 100vh;
+
+  background: #1e1e1e;
+  padding: 20px;
+
+  transform: translateX(100%);   /* 🔥 piilossa */
+  transition: transform 0.3s ease;
+
+  z-index: 2000;                 /* 🔥 yli kaiken muun */
+}
+
+.mobile-menu a {
+  color: #ffffff;                 /* 🔥 valkoinen teksti */
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;  /* hienovarainen harmaa viiva */
+  transition: color 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  color: #ff6600;                 /* 🔥 oranssi hover */
+}
+
+.mobile-menu.open {
+  transform: translateX(0);      /* 🔥 liukuu sisään */
+}
+
+.close-menu {
+  font-size: 2rem;
+  color: #ff6600;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+/* --- MOBILE BREAKPOINT --- */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;               /* piilota desktop-menu */
+  }
+
+  .hamburger {
+    display: flex;               /* näytä hampurilainen */
+  }
+}
