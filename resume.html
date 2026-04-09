@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Personal Bootstrap Template</title>
+  <title>Resume - Personal Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,16 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
-
-  <style>
-    body {
-      background-image: url(../Portfolio/assets/img/galaxy-universum-weltall-kosmos-1705342933lA7.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
+<body class="resume-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -58,9 +49,9 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
           <!-- <li><a href="services.html">Services</a></li> -->
           <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -90,35 +81,118 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
-
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h2>Oleg Fedjuk</h2>
-        <p>I'm a junior <span id="typed"></span></p>
-        <div class="social-links">
-          <!-- <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a> -->
-          <a href="https://linkedin.com/in/oleg-fedjuk-13480b359/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/Oleg781" target="_blank"><i class="bi bi-github"></i></a>
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Resume</h1>
+              <p class="mb-0">A brief overview of my studies and CV.</p>
+            </div>
+          </div>
         </div>
       </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Resume</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
 
-    </section><!-- /Hero Section -->
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
 
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>CV</h4>
+              <p>I am a web development student. During my studies, I have gained foundation in web technologies and am eager to continue improving my skills. Everything is covered in my CV.</p>
+              <!-- <ul>
+                <li>+358 40 1881324</li>
+                <li>oleg.fedjuk@gmail.com</li>
+                <li>Finland, Tampere, 33720</li>
+              </ul> -->
+              <a href="assets/CV/CV.pdf" class="btn btn-primary" download="CV.pdf" target="_blank">Download My CV</a>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>i4ware Software</h4>
+              <h5>9.2025 - 12.2025</h5>
+              <p>I contributed to frontend and backend tasks, focusing on clean code, responsive layouts, and improving user experience. I collaborated with the team remotely and followed modern development practices. My task was perfecting timesheet part.</p>
+              <a href="assets/Job/sy_tyotodistus - Oleg Fedjuk.pdf" class="btn btn-primary" download="sy_tyotodistus - Oleg Fedjuk.pdf" target="_blank">Download Employment Certificate</a>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Vocational Degree - Web Developer</h4>
+              <h5>2024 - Present</h5>
+              <p><em>Tampere Regional Vocational Institute, Tampere, Finland</em></p>
+              <p>Gaining a solid foundation in web development, including frontend, backend basics, version control, and project‑based learning.</p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>High School</h4>
+              <h5>2020 - 2023</h5>
+              <p><em>Tampere Technical High School, Tampere, Finland</em></p>
+              <p>Finished upper secondary education with a technical orientation and strong interest in IT.</p>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200"> -->
+            <!-- <h3 class="resume-title">Professional Experience</h3> -->
+            <!-- <div class="resume-item">
+              <h4>Senior graphic design specialist</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Experion, New York, NY </em></p>
+              <ul>
+                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Graphic design specialist</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div> -->
+
+          <!-- </div> -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
   </main>
 
   <footer id="footer" class="footer dark-background">
-    <div class="container">
+    <div class="container"> 
       <h3 class="sitename">About This Site</h3>
       <p>A student portfolio highlighting my learning journey, skills, and projects.</p>
       <div class="social-links d-flex justify-content-center">
         <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a> -->
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a> -->
         <a href="https://linkedin.com/in/oleg-fedjuk-13480b359/" target="_blank"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/Oleg781" target="_blank"><i class="bi bi-github"></i></a>
       </div>
@@ -147,25 +221,13 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script>
-    var typed = new Typed("#typed", {
-      strings: ["Web Developer"],
-      typeSpeed: 50,
-      showCursor: true,
-      cursorChar: "|",
-      loop: false,         // ❗ do not repeat
-      backDelay: 999999,   // ❗ set a huge back delay so it never triggers
-      backSpeed: 0,        // ❗ disables text deletion
-      smartBackspace: false,
-    });
-  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
